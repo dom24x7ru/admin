@@ -1,0 +1,41 @@
+{
+	"database": {
+		"default": {
+			"host": "127.0.0.1",
+			"port": "5432",
+			"user": "webadmin",
+			"pwd": "password",
+			"name": "master",
+			"max_idle_con": 5,
+			"max_open_con": 10,
+			"driver": "postgresql"
+		}
+	},
+	"app_id": "27WxO5mlKSwY",
+	"language": "en",
+	"prefix": "admin",
+	"theme": "sword",
+	"store": {
+		"path": "./uploads",
+		"prefix": "uploads"
+	},
+	"title": "GoAdmin",
+	"logo": "\u003cb\u003eGo\u003c/b\u003eAdmin",
+	"mini_logo": "\u003cb\u003eG\u003c/b\u003eA",
+	"index": "/",
+	"login_url": "/login",
+	"debug": true,
+	"env": "local",
+	"info_log": "/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/logs/info.log",
+	"error_log": "/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/logs/error.log",
+	"access_log": "/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/logs/access.log",
+	"session_life_time": 7200,
+	"file_upload_engine": {
+		"name": "local"
+	},
+	"login_title": "GoAdmin",
+	"auth_user_table": "goadmin_users",
+	"bootstrap_file_path": "/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/bootstrap.go",
+	"go_mod_file_path": "/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/go.mod",
+	"asset_root_path": "./public/"
+}
