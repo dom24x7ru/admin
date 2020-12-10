@@ -51,11 +51,30 @@ func GetPersonTable(ctx *context.Context) (personTable table.Table) {
 		FieldEditAble(editType.Text).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
 	info.AddField("Биография", "biography", db.Text).
-		FieldEditAble(editType.Text).
+		FieldDisplay(func(model types.FieldModel) interface{} {
+			if len(model.Value) > 0 {
+				return "<i class='fa fa-comment'></i>"
+			}
+			return ""
+		}).
+		//FieldEditAble(editType.Text).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
+
 	info.AddField("Telegram", "telegram", db.Varchar).
 		FieldEditAble(editType.Text).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
+	info.AddField("Телефон", "mobile", db.Varchar).
+		FieldJoin(types.Join{
+			Table:     "users",  // table name which you want to join
+			Field:     "userId", // table field name of your own
+			JoinField: "id",     // table field name of the table which you want to join
+		})
+	info.AddField("Роль", "mobile", db.Varchar).
+		FieldJoin(types.Join{
+			Table:     "users",  // table name which you want to join
+			Field:     "userId", // table field name of your own
+			JoinField: "id",     // table field name of the table which you want to join
+		})
 	info.AddField("Создано", "createdAt", db.Timestamptz).
 		FieldFilterable(types.FilterType{FormType: form.DatetimeRange})
 	info.AddField("Обновлено", "updatedAt", db.Timestamptz).
