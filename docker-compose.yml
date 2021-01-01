@@ -1,8 +1,6 @@
-# Use postgres/example user/password credentials
 version: '3.1'
 
 services:
-
   db:
     image: postgres:12.4
     restart: always
@@ -13,11 +11,6 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: master
     volumes:
-      - ./db/dump.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./db/pgsql.admin.sql:/docker-entrypoint-initdb.d/admin.sql
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
+      - ./db/1_dump.sql:/docker-entrypoint-initdb.d/1_init.sql
+#      - ./db/2_pgsql.admin.sql:/docker-entrypoint-initdb.d/2_admin.sql
+#      - ./db/3_master_public_goadmin_menu.sql:/docker-entrypoint-initdb.d/3_master_public_goadmin_menu.sql

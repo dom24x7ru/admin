@@ -14,26 +14,24 @@ func GetInvitesTable(ctx *context.Context) table.Table {
 	info := invites.GetInfo()
 
 	info.AddField("Id", "id", db.Int4)
-	info.AddField("Number", "number", db.Int4)
-	info.AddField("Section", "section", db.Int4)
-	info.AddField("Floor", "floor", db.Int4)
-	info.AddField("Rooms", "rooms", db.Int4)
-	info.AddField("Square", "square", db.Float8)
-	info.AddField("CreatedAt", "createdAt", db.Timestamptz)
-	info.AddField("UpdatedAt", "updatedAt", db.Timestamptz)
+	info.AddField("UserId", "userId", db.Int4)
+	info.AddField("Code", "code", db.Varchar)
+	info.AddField("Used", "used", db.Bool)
+	info.AddField("NewUserId", "newUserId", db.Int4)
+	info.AddField("Создано", "Создано", db.Timestamptz)
+	info.AddField("Обновлено", "Обновлено", db.Timestamptz)
 
 	info.SetTable("invites").SetTitle("Invites").SetDescription("Invites")
 
 	formList := invites.GetForm()
 	formList.AddField("Id", "id", db.Int4, form.Default).
 		FieldDisableWhenCreate()
-	formList.AddField("Number", "number", db.Int4, form.Number)
-	formList.AddField("Section", "section", db.Int4, form.Number)
-	formList.AddField("Floor", "floor", db.Int4, form.Number)
-	formList.AddField("Rooms", "rooms", db.Int4, form.Number)
-	formList.AddField("Square", "square", db.Float8, form.Text)
-	formList.AddField("CreatedAt", "createdAt", db.Timestamptz, form.Datetime)
-	formList.AddField("UpdatedAt", "updatedAt", db.Timestamptz, form.Datetime)
+	formList.AddField("UserId", "userId", db.Int4, form.Number)
+	formList.AddField("Code", "code", db.Varchar, form.Text)
+	formList.AddField("Used", "used", db.Bool, form.Text)
+	formList.AddField("NewUserId", "newUserId", db.Int4, form.Number)
+	formList.AddField("Создано", "Создано", db.Timestamptz, form.Datetime)
+	formList.AddField("Обновлено", "Обновлено", db.Timestamptz, form.Datetime)
 
 	formList.SetTable("invites").SetTitle("Invites").SetDescription("Invites")
 

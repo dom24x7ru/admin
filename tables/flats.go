@@ -19,8 +19,8 @@ func GetFlatsTable(ctx *context.Context) table.Table {
 	info.AddField("Floor", "floor", db.Int4)
 	info.AddField("Rooms", "rooms", db.Int4)
 	info.AddField("Square", "square", db.Float8)
-	info.AddField("CreatedAt", "createdAt", db.Timestamptz)
-	info.AddField("UpdatedAt", "updatedAt", db.Timestamptz)
+	info.AddField("Создано", "Создано", db.Timestamptz)
+	info.AddField("Обновлено", "Обновлено", db.Timestamptz)
 
 	info.SetTable("flats").SetTitle("Flats").SetDescription("Flats")
 
@@ -32,8 +32,8 @@ func GetFlatsTable(ctx *context.Context) table.Table {
 	formList.AddField("Floor", "floor", db.Int4, form.Number)
 	formList.AddField("Rooms", "rooms", db.Int4, form.Number)
 	formList.AddField("Square", "square", db.Float8, form.Text)
-	formList.AddField("CreatedAt", "createdAt", db.Timestamptz, form.Datetime)
-	formList.AddField("UpdatedAt", "updatedAt", db.Timestamptz, form.Datetime)
+	formList.AddField("Создано", "Создано", db.Timestamptz, form.Datetime)
+	formList.AddField("Обновлено", "Обновлено", db.Timestamptz, form.Datetime)
 
 	formList.SetTable("flats").SetTitle("Flats").SetDescription("Flats")
 

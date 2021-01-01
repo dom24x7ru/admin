@@ -75,9 +75,9 @@ func GetPersonTable(ctx *context.Context) (personTable table.Table) {
 			Field:     "userId", // table field name of your own
 			JoinField: "id",     // table field name of the table which you want to join
 		})
-	info.AddField("Создано", "createdAt", db.Timestamptz).
+	info.AddField("Создано", "Создано", db.Timestamptz).
 		FieldFilterable(types.FilterType{FormType: form.DatetimeRange})
-	info.AddField("Обновлено", "updatedAt", db.Timestamptz).
+	info.AddField("Обновлено", "Обновлено", db.Timestamptz).
 		FieldFilterable(types.FilterType{FormType: form.DatetimeRange})
 
 	// форма
@@ -94,11 +94,11 @@ func GetPersonTable(ctx *context.Context) (personTable table.Table) {
 		}).FieldDefault("муж")
 	formList.AddField("Биография", "biography", db.Text, form.TextArea)
 	formList.AddField("Telegram", "telegram", db.Varchar, form.Text)
-	formList.AddField("Создано", "createdAt", db.Timestamp, form.Default).FieldNotAllowAdd()
-	formList.AddField("Обновлено", "updatedAt", db.Timestamp, form.Default).FieldNotAllowAdd()
+	formList.AddField("Создано", "Создано", db.Timestamp, form.Default).FieldNotAllowAdd()
+	formList.AddField("Обновлено", "Обновлено", db.Timestamp, form.Default).FieldNotAllowAdd()
 
 	personTable.GetForm().SetTabGroups(types.
-		NewTabGroups("id", "userId", "createdAt", "updatedAt").
+		NewTabGroups("id", "userId", "Создано", "Обновлено").
 		AddGroup("name", "surname", "midname", "sex", "biography", "telegram")).
 		SetTabHeaders("Техническая информация", "Личное")
 

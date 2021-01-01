@@ -1,0 +1,923 @@
+2020-12-06T23:38:09.404+0300	[31mERROR[0m	controller/new.go:118	insert data error: open ./tables/flats.go/flats.go: no such file or directory
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).NewForm
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/new.go:118
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).NewForm
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/new.go:121
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-07T00:39:28.361+0300	[31mERROR[0m	controller/handler.go:31	pq: column users.userId does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:25:49.461+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:25:55.007+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:26:38.887+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:27:15.782+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:36:23.213+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "voteanswers" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:36:24.914+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "votequestions" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:39:16.428+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "votequestions" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:39:25.052+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/!go!admin!group/go-admin@v1.2.17/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/pkg/mod/github.com/gin-gonic/gin@v1.6.3/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:44:01.260+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:44:01.748+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:50:18.955+0300	[31mERROR[0m	controller/handler.go:31	pq: syntax error at or near "'faqCategories'"
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:51:33.916+0300	[31mERROR[0m	controller/handler.go:31	pq: syntax error at or near "'goadmin_operation_log'"
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:51:38.360+0300	[31mERROR[0m	controller/handler.go:31	pq: syntax error at or near "'goadmin_operation_log'"
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:52:50.818+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "faqcategories" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895
+2020-12-13T03:59:40.352+0300	[31mERROR[0m	controller/handler.go:31	pq: relation "voteanswers" does not exist
+github.com/GoAdminGroup/go-admin/modules/logger.Error
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/logger/logger.go:285
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).GlobalDeferHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/handler.go:31
+runtime.gopanic
+	/usr/local/Cellar/go/1.14.1/libexec/src/runtime/panic.go:967
+github.com/GoAdminGroup/go-admin/modules/db.CommonQuery
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/performer.go:20
+github.com/GoAdminGroup/go-admin/modules/db.(*Postgresql).QueryWithConnection
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/db/postgresql.go:41
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).getDataFromDatabase
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:516
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/table.(*DefaultTable).GetData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/table/default.go:130
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTableData
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:71
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).showTable
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:103
+github.com/GoAdminGroup/go-admin/plugins/admin/controller.(*Handler).ShowInfo
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/controller/show.go:61
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard.(*Guard).CheckPrefix
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard/guard.go:51
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/modules/auth.(*Invoker).Middleware.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/modules/auth/middleware.go:132
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/plugins/admin.(*Admin).globalErrorHandler
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/plugins/admin/router.go:104
+github.com/GoAdminGroup/go-admin/context.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/context/context.go:101
+github.com/GoAdminGroup/go-admin/adapter/gin.(*Gin).AddHandler.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/GoAdminGroup/go-admin/adapter/gin/gin.go:91
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.RecoveryWithWriter.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/recovery.go:83
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/logger.go:241
+github.com/gin-gonic/gin.(*Context).Next
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/context.go:161
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:409
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/Users/mvkamashev/go/src/gitlab.com/dom24x7/admin/vendor/github.com/gin-gonic/gin/gin.go:367
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:2807
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.14.1/libexec/src/net/http/server.go:1895

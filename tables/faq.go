@@ -14,26 +14,22 @@ func GetFaqTable(ctx *context.Context) table.Table {
 	info := faq.GetInfo()
 
 	info.AddField("Id", "id", db.Int4)
-	info.AddField("Number", "number", db.Int4)
-	info.AddField("Section", "section", db.Int4)
-	info.AddField("Floor", "floor", db.Int4)
-	info.AddField("Rooms", "rooms", db.Int4)
-	info.AddField("Square", "square", db.Float8)
-	info.AddField("CreatedAt", "createdAt", db.Timestamptz)
-	info.AddField("UpdatedAt", "updatedAt", db.Timestamptz)
+	info.AddField("Создано", "Создано", db.Timestamptz)
+	info.AddField("Обновлено", "Обновлено", db.Timestamptz)
+	info.AddField("CategoryId", "categoryId", db.Int4)
+	info.AddField("Title", "title", db.Varchar)
+	info.AddField("Body", "body", db.Text)
 
 	info.SetTable("faq").SetTitle("Faq").SetDescription("Faq")
 
 	formList := faq.GetForm()
 	formList.AddField("Id", "id", db.Int4, form.Default).
 		FieldDisableWhenCreate()
-	formList.AddField("Number", "number", db.Int4, form.Number)
-	formList.AddField("Section", "section", db.Int4, form.Number)
-	formList.AddField("Floor", "floor", db.Int4, form.Number)
-	formList.AddField("Rooms", "rooms", db.Int4, form.Number)
-	formList.AddField("Square", "square", db.Float8, form.Text)
-	formList.AddField("CreatedAt", "createdAt", db.Timestamptz, form.Datetime)
-	formList.AddField("UpdatedAt", "updatedAt", db.Timestamptz, form.Datetime)
+	formList.AddField("Создано", "Создано", db.Timestamptz, form.Datetime)
+	formList.AddField("Обновлено", "Обновлено", db.Timestamptz, form.Datetime)
+	formList.AddField("CategoryId", "categoryId", db.Int4, form.Number)
+	formList.AddField("Title", "title", db.Varchar, form.Text)
+	formList.AddField("Body", "body", db.Text, form.RichText)
 
 	formList.SetTable("faq").SetTitle("Faq").SetDescription("Faq")
 

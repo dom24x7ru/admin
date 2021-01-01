@@ -14,26 +14,24 @@ func GetPostsTable(ctx *context.Context) table.Table {
 	info := posts.GetInfo()
 
 	info.AddField("Id", "id", db.Int4)
-	info.AddField("Number", "number", db.Int4)
-	info.AddField("Section", "section", db.Int4)
-	info.AddField("Floor", "floor", db.Int4)
-	info.AddField("Rooms", "rooms", db.Int4)
-	info.AddField("Square", "square", db.Float8)
-	info.AddField("CreatedAt", "createdAt", db.Timestamptz)
-	info.AddField("UpdatedAt", "updatedAt", db.Timestamptz)
+	info.AddField("Title", "title", db.Varchar)
+	info.AddField("Body", "body", db.Text)
+	info.AddField("Создано", "Создано", db.Timestamptz)
+	info.AddField("Обновлено", "Обновлено", db.Timestamptz)
+	info.AddField("Type", "type", db.Varchar)
+	info.AddField("Url", "url", db.Varchar)
 
 	info.SetTable("posts").SetTitle("Posts").SetDescription("Posts")
 
 	formList := posts.GetForm()
 	formList.AddField("Id", "id", db.Int4, form.Default).
 		FieldDisableWhenCreate()
-	formList.AddField("Number", "number", db.Int4, form.Number)
-	formList.AddField("Section", "section", db.Int4, form.Number)
-	formList.AddField("Floor", "floor", db.Int4, form.Number)
-	formList.AddField("Rooms", "rooms", db.Int4, form.Number)
-	formList.AddField("Square", "square", db.Float8, form.Text)
-	formList.AddField("CreatedAt", "createdAt", db.Timestamptz, form.Datetime)
-	formList.AddField("UpdatedAt", "updatedAt", db.Timestamptz, form.Datetime)
+	formList.AddField("Title", "title", db.Varchar, form.Text)
+	formList.AddField("Body", "body", db.Text, form.RichText)
+	formList.AddField("Создано", "Создано", db.Timestamptz, form.Datetime)
+	formList.AddField("Обновлено", "Обновлено", db.Timestamptz, form.Datetime)
+	formList.AddField("Type", "type", db.Varchar, form.Text)
+	formList.AddField("Url", "url", db.Varchar, form.Text)
 
 	formList.SetTable("posts").SetTitle("Posts").SetDescription("Posts")
 
